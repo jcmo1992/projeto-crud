@@ -6,6 +6,14 @@
 
     <%- include('partials/navbar.ejs') %>
 
+    <ul>
+        <% users.forEach((user)=> { %>
+        <li>
+            <%= user.name %> - <%= user.email %> - Idade: <%= user.age %>
+        </li>
+        <% }) %>
+    </ul>
+
     <%- include('partials/foot.ejs') %>
 </body>
 </html>
